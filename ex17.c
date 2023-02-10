@@ -21,31 +21,31 @@ Ao final, exiba o vetor lido. Nao use a func¸ ˜ ao REALLOC. */
 int main(){
     int *vetor,valor, indice = 0, indiceParcial = 0;
 
-    vetor = (int *) malloc(10 * sizeof(int));
+    vetor = ( int * ) malloc(10 * sizeof( int ));
     
     do{
         printf("Escreva o valor que deseja armazenar: \n");
-        scanf("%i", &valor);
+        scanf( "%i", &valor );
 
-        vetor[indice++] = valor;
+        vetor[ indice++ ] = valor;
 
-        if (indiceParcial++ == 9){
+        if ( indiceParcial++ == 9 ) {
             int *vetorAux;
-            vetorAux = (int *) malloc((indice + 10) *sizeof(int));
-            memcpy(vetorAux, vetor, indice * sizeof(int));
+            vetorAux = ( int * ) malloc(( indice + 10 ) *sizeof( int ));
+            memcpy(vetorAux, vetor, indice * sizeof( int ));
 
-            free(vetor);
+            free( vetor );
             vetor = vetorAux;
             indiceParcial = 0;
         }
-    } while(valor != 0);
+    } while ( valor != 0 );
 
-    system("clear||cls");
-    for(int i = 0; i < indice; i++){
-        printf("\n%d\n", vetor[i]);
+    system( "clear||cls" );
+    for ( int i = 0; i < indice; i++ ){
+        printf( "\n%d\n", vetor[i] );
     }
 
-    free(vetor);
+    free( vetor );
 
     return 0;
 }
