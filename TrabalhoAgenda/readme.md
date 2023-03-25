@@ -1,5 +1,8 @@
+Lucas Lopes Silva -  Turma M2
+
 Agenda
-•Continuar a sua implementação da agenda (exercício 3) semana 1 dentro dos mesmo parâmetros, mas incluir o seguinte.
+
+Continuar a sua implementação da agenda (exercício 3) semana 1 dentro dos mesmo parâmetros, mas incluir o seguinte.
 Nenhuma variável pode ser declarada em todo o programa, somente ponteiros. Todos os dados do programa devem ser guardados dentro do pBuffer.
 Nem mesmo como parâmetro de função. Só ponteiros que apontam para dentro do pBuffer.
 Exemplo do que não pode: int c; char a; int v[10];  void Funcao(int parametro)
